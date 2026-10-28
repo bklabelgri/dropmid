@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bklabelgri-dropmid"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别智能体的中间结果丢弃上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "bklabelgri" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://bklabelgri.github.io"
+Repository = "https://github.com/bklabelgri/dropmid"
+Issues = "https://github.com/bklabelgri/dropmid/issues"
+
+[project.scripts]
+dropmid = "dropmid:main"
+
+[tool.setuptools]
+py-modules = ["dropmid"]
